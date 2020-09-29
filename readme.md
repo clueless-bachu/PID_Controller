@@ -5,7 +5,11 @@
 
 
 ## Author
+Part 1:
 Vasista Ayyaagri (Driver and Navigator; because I was not assigned a navigator)
+
+Part 2:
+Ajinkya Parwekar (Driver), Mahmoud Dahmani (Navigator)
 
 ## Overview
 
