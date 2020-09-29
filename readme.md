@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# C++ PID Controller
 [![Build Status](https://travis-ci.org/clueless-bachu/PID_Controller.svg?branch=master)](https://travis-ci.org/clueless-bachu/PID_Controller)
 [![Coverage Status](https://coveralls.io/repos/github/clueless-bachu/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/clueless-bachu/PID_Controller?branch=master)
 ---
