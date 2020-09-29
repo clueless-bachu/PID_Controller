@@ -15,6 +15,10 @@ Ajinkya Parwekar (Driver), Mahmoud Dahmani (Navigator)
 
 A PID Controller for velocity control. The UML diagram for the controller is as follows
 ![UML Diagram](./images/pidUmlDiagram.png)
+
+## Discussions
+We discussed about the design of the the software. A suggestion was forwarded about having the ability to access the control parameters which were private to dynamically change them. Another discussion was conducted on different naming conventions for class attributes
+
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/dpiet/cpp-boilerplate
@@ -24,7 +28,7 @@ cd build
 cmake ..
 make
 Run tests: ./test/cpp-test
-Run program: ./app/shell-app
+Run program: ./app/velControl
 ```
 
 ## Building for code coverage (for assignments beginning in Week 4)
