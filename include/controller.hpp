@@ -13,7 +13,7 @@
 */
 class Controller{
  private:
-    double kd, kp, ki, errSum, target, curValue, prevValue;
+    double kp, kd, ki, errSum, prevValue;
  public:
     Controller(double, double, double);
     ~Controller();
