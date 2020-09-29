@@ -56,7 +56,7 @@ void Controller::setKi(double ki) {
 * @return  Kp
 */
 double Controller::getKp() {
-	return 0.0;
+    return 0.0;
 }
 
 /*
@@ -66,7 +66,7 @@ double Controller::getKp() {
 */
 
 double Controller::getKd() {
-	return 0.0;
+    return 0.0;
 }
 
 /*
@@ -75,7 +75,7 @@ double Controller::getKd() {
 * @return  Ki
 */
 double Controller::getKi() {
-	return 0.0;
+    return 0.0;
 }
 
 
@@ -86,6 +86,5 @@ double Controller::getKi() {
 * @return an input for the system from the control law
 */
 double Controller::control(double curValue, double target) {
-    
     return 3.14;
 }
