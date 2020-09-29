@@ -24,7 +24,7 @@ TEST(controllerTest, controlFuncTest1) {
 */
 TEST(controllerTest, controlFuncTest2) {
     Controller velController(1.0, 1.0, 1.0);
-    EXPECT_EQ(1.0, velController.control(0.0, 1.0));
+    EXPECT_EQ(2.0, velController.control(0.0, 1.0));
 }
 
 
