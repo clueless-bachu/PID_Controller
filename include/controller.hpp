@@ -6,8 +6,6 @@
 */
 #pragma once
 #include<iostream>
-#include <vector>
-using std::vector;
 
 /*
 * @class Controller
@@ -19,6 +17,11 @@ class Controller{
  public:
     Controller(double, double, double);
     ~Controller();
-    vector<double> getControlParam();
+    void setKp(double);
+    void setKd(double);
+    void setKi(double);
+    double getKp();
+    double getKd();
+    double getKi();
     double control(double, double);
 };

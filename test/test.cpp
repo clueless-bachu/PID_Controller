@@ -5,9 +5,7 @@
 * @copyright Vasista Ayyagari, 2020
 */
 #include <gtest/gtest.h>
-#include <vector>
 #include "../include/controller.hpp"
-using std::vector;
 
 /**
 * @brief This test checks if the control law works as expected
@@ -37,7 +35,24 @@ TEST(controllerTest, controlFuncTest2) {
 */
 TEST(controllerTest, paramGetTest) {
     Controller velController(1.2, 1.4, 3.9);
-    vector<double> params = {1.2, 1.4, 3.9};
-    EXPECT_EQ(params, velController.getControlParam());
+    EXPECT_EQ(1.2, velController.getKp());
+    EXPECT_EQ(1.4, velController.getKd());
+    EXPECT_EQ(3.9, velController.getKi());
 }
 
+/**
+* @brief This test checks if the controller can change the inherent parameters
+* @param controllerTest is the name of the group of tests
+* @param paramGetTest is the specific name to check the getControlParam function
+*/
+TEST(controllerTest, paramSetTest) {
+    Controller velController(1.2, 1.4, 3.9);
+
+    velController.setKp(2.4);
+    velController.setKd(2.5);
+    velController.setKi(2.6);
+
+    EXPECT_EQ(2.4, velController.getKp());
+    EXPECT_EQ(2.5, velController.getKd());
+    EXPECT_EQ(2.6, velController.getKi());
+}

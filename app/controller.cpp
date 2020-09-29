@@ -25,16 +25,59 @@ Controller::Controller(double kp, double kd, double ki) {
 Controller::~Controller() {
 }
 
+/*
+* @brief sets the value of kp
+* @param kp: the value for Kp parameter
+* @return  none
+*/
+void Controller::setKp(double kp) {
+}
 
 /*
-* @brief A function to get the PID parameters
-* @param None
-* @return a vector of doubles with the PID parameters
+* @brief sets the value of kd
+* @param kd: the value for Kd parameter
+* @return  none
 */
-vector<double> Controller::getControlParam() {
-    vector<double> controlParam = {0.0, 0.0, 0.0};
-    return controlParam;
+
+void Controller::setKd(double kd) {
 }
+
+/*
+* @brief sets the value of ki
+* @param ki: the value for Ki parameter
+* @return  none
+*/
+void Controller::setKi(double ki) {
+}
+
+/*
+* @brief returns the value of kp
+* @param none
+* @return  Kp
+*/
+double Controller::getKp() {
+	return 0.0;
+}
+
+/*
+* @brief returns the value of kd
+* @param none
+* @return  Kd
+*/
+
+double Controller::getKd() {
+	return 0.0;
+}
+
+/*
+* @brief returns the value of ki
+* @param none
+* @return  Ki
+*/
+double Controller::getKi() {
+	return 0.0;
+}
+
 
 /*
 * @brief A function to implement the PID control law and return the system input
